@@ -131,4 +131,4 @@ https://stackoverflow.com/a/48187594/7550472)
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
 
 
-##### DISCLAIMER : Note : this is not affiliated with Amazon Web Services (AWS) in any way other than for reference purposes.
+##### DISCLAIMER : this is not affiliated with Amazon Web Services (AWS) in any way other than for reference purposes.
