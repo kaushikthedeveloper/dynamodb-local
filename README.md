@@ -116,10 +116,7 @@ Here is an *example* that uses the AWS CLI to list the tables in a local databas
 $ aws dynamodb list-tables --endpoint-url http://localhost:8000
 ```
 
-If DynamoDB is using a port number other than the default (8000), modify the --endpoint-url value accordingly.
-
-For further reading on various `aws dynamodb` commands, go through :
-[cli-aws-dynamodb](https://docs.aws.amazon.com/cli/latest/reference/dynamodb/index.html#cli-aws-dynamodb)
+If DynamoDB is using a port number other than the default (8000), modify the `--endpoint-url value` accordingly.
 
 
 # References (further reading) :
