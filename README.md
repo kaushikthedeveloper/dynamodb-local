@@ -118,6 +118,8 @@ $ aws dynamodb list-tables --endpoint-url http://localhost:8000
 
 If DynamoDB is using a port number other than the default (8000), modify the `--endpoint-url value` accordingly.
 
+Few of the commonly used commands listed in the [commands.sh file](
+https://github.com/kaushikthedeveloper/dynamodb-local/blob/master/commands.sh)
 
 # References (further reading) :
 
