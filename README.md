@@ -2,7 +2,8 @@
 
 ***(does not require aws account)***
 
-This project focuses on providing a complementary project, showcasing working with locally setup DynamoDB.
+This project focuses on providing a complementary project, showcasing working with locally setup DynamoDB. Contains
+Java examples that use DynamoDB SDK to interact with the Database.
 
 Recommended to first go through : [DynamoDB Developer Guide](
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
@@ -75,7 +76,7 @@ Project Object Model (POM) file:
            <dependency>
               <groupId>com.amazonaws</groupId>
               <artifactId>DynamoDBLocal</artifactId>
-              <version>[1.11,2.0)</version>
+              <version>[1.11.86,2.0)</version>
            </dependency>
        </dependencies>
        <!--Custom repository:-->

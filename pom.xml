@@ -7,13 +7,25 @@
     <groupId>com.github.kaushikthedeveloper</groupId>
     <artifactId>dynamodb-local</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>DynamoDBLocal</artifactId>
-            <version>1.11.0.1</version>
+            <version>[1.11.86,2.0)</version>
         </dependency>
     </dependencies>
 
