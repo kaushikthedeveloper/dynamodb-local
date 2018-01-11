@@ -1,0 +1,4 @@
+.idea/
+/dynamodb-local.iml
+*.db
+/target/
