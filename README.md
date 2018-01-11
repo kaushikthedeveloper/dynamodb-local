@@ -2,8 +2,7 @@
 
 ***(does not require aws account)***
 
-This project focuses on providing a complementary project showcasing of working with locally setup DynamoDB 
-in your system.
+This project focuses on providing a complementary project, showcasing working with locally setup DynamoDB.
 
 Recommended to first go through : [DynamoDB Developer Guide](
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
@@ -28,7 +27,7 @@ http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLo
 
     **NOTE : This starts a local database with server running at the default** `port:8000` **.**
 
-    ##### Options available for starting DynamoDB [<sup> [1] </sup>](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
+    #### Options available for starting DynamoDB [<sup> [1] </sup>](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
 
     - cors value — Enables support for cross-origin resource sharing (CORS) for JavaScript.
     
