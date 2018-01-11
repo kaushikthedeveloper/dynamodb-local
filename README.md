@@ -88,14 +88,15 @@ Project Object Model (POM) file:
        </repositories>
        ```
        
-       **NOTE : choose the appropriate region-wise url for the repository (depending on the region for the downloaded
+       **NOTE : choose the appropriate [region-wise url](https://docs.aws.amazon.com/general/latest/gr/rande.html#ddb_region)
+        for the repository (depending on the region for the downloaded
         DynamoDB in your system)**
 
 7. Proceed with the Java programs.
 
 ***NOTE : when run, the programs create local DataBase in the topmost project folder.***
 
-## Using the AWS CLI with Downloadable DynamoDB
+## Using the AWS CLI with Downloadable DynamoDB [<sup> [4] </sup>](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
 
 A preferable way to access and query your DB that is created is to use the `aws cli`. Install it in the terminal :
 
@@ -129,6 +130,7 @@ https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.h
 https://stackoverflow.com/a/48187594/7550472)
 3. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html](
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
-
+4. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html](
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
 
 ##### DISCLAIMER : this is not affiliated with Amazon Web Services (AWS) in any way other than for reference purposes.
