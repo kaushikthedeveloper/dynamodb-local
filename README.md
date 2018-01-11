@@ -27,7 +27,7 @@ http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLo
 
     **NOTE : This starts a local database with server running at the default** `port:8000` **.**
 
-    #### Options available for starting DynamoDB [<sup> [1] </sup>](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
+    #### Options available for starting DynamoDB [<sup> [1] </sup>](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) :
 
     - cors value — Enables support for cross-origin resource sharing (CORS) for JavaScript.
     
@@ -47,10 +47,12 @@ http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.DynamoDBLo
 ### Set the credentials for AWS [<sup> [2] </sup>](https://stackoverflow.com/a/48187594/7550472)
 
 4. [Setup some dummy credentials](https://docs.aws.amazon.com/sdk-for-net/v2/developer-guide/net-dg-config-creds.html)
- (*required as otherwise throws Error : **Unable to load AWS credentials from any provider
- in the chain***). The simplest method :
+ (*required, as otherwise throws Error : **Unable to load AWS credentials from any provider
+ in the chain***). 
+
+    The simplest method :
  
-    - Open the default config file : ~/aws/credentials
+    - Open the default config file : `~/aws/credentials`
     - Change the values in it to anything (like empty string here)
       
       ```text
@@ -87,11 +89,11 @@ Project Object Model (POM) file:
        ```
        
        **NOTE : choose the appropriate region-wise url for the repository (depending on the region for the downloaded
-        DynamoDB)**
+        DynamoDB in your system)**
 
 7. Proceed with the Java programs.
 
-***NOTE : when run, the programs creates the local DataBase in the topmost project folder.***
+***NOTE : when run, the programs create local DataBase in the topmost project folder.***
 
 ## Using the AWS CLI with Downloadable DynamoDB
 
