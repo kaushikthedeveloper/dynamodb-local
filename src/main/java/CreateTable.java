@@ -1,5 +1,7 @@
 import java.util.Arrays;
 
+import Helpers.ConfigDetails;
+import Helpers.EnvironmentDetails;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -11,18 +13,34 @@ import com.amazonaws.services.dynamodbv2.model.KeyType;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType;
 
+
+/**
+ * Create Table in the DB using com.amazonaws.services.dynamodbv2.document.Table
+ *
+ * @author KaushikTheDeveloper
+ */
 public class CreateTable {
 
     public static void main(String[] args) throws Exception {
 
+        // helper classes
+        EnvironmentDetails environmentDetails = new EnvironmentDetails();
+        ConfigDetails configDetails = new ConfigDetails();
+
+        // set local variables
+        // get the Environment variables
+        String serviceEndPoint = environmentDetails.getServiceEndPoint();
+        String signingRegion = environmentDetails.getSigningRegion();
+        //get the Config variables
+        String tableName = configDetails.getTableName();
+
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
                 .withEndpointConfiguration(new AwsClientBuilder
-                        .EndpointConfiguration("http://localhost:8000", "ap-south-1"))
+                        .EndpointConfiguration(serviceEndPoint, signingRegion))
                 .build();
 
         DynamoDB dynamoDB = new DynamoDB(client);
 
-        String tableName = "Movies";
 
         try {
             System.out.println("Attempting to create table; please wait...");
@@ -34,7 +52,8 @@ public class CreateTable {
                             new AttributeDefinition("title", ScalarAttributeType.S)),
                     new ProvisionedThroughput(10L, 10L));
             table.waitForActive();
-            System.out.println("Success.  Table status: " + table.getDescription().getTableStatus());
+            System.out.println("Success!!!!");
+            System.out.println("Table '"+ tableName+"' status: " + table.getDescription().getTableStatus());
 
         }
         catch (Exception e) {
