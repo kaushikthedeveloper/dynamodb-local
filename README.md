@@ -95,14 +95,12 @@ Project Object Model (POM) file:
 
 7. Proceed with the Java programs.
 
-***NOTE : when run, the programs create local DataBase in the topmost project folder.***
-
 ## Using the AWS CLI with Downloadable DynamoDB [<sup> [4] </sup>](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
 
 A preferable way to access and query your DB that is created is to use the `aws cli`. Install it in the terminal :
 
 ```bash
-$ sudo apt install awscli 
+$ sudo pip install awscli
 ```
 
 The AWS CLI can interact with DynamoDB (Downloadable Version) that runs on your computer. To enable this, add the 
