@@ -13,7 +13,7 @@ public class ConfigDetails {
     // filepath
     private String f_config = "../config.properties";
 
-    private static String tableName;
+    private String tableName;
 
     /**
      * Load the details from environment.properties
@@ -32,7 +32,7 @@ public class ConfigDetails {
         tableName = prop.getProperty("tableName");
     }
 
-    public static String getTableName() {
+    public String getTableName() {
         return tableName;
     }
 }
