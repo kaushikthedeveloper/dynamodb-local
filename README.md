@@ -122,13 +122,16 @@ https://github.com/kaushikthedeveloper/dynamodb-local/blob/master/commands.sh)
 
 # References (further reading) :
 
-1. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html](
+[1]. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html](
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
-2. [https://stackoverflow.com/a/48187594/7550472](
+
+[2]. [https://stackoverflow.com/a/48187594/7550472](
 https://stackoverflow.com/a/48187594/7550472)
-3. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html](
+
+[3]. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html](
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
-4. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html](
+
+[4]. [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html](
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Java.html)
 
 ##### DISCLAIMER : this is not affiliated with Amazon Web Services (AWS) in any way other than for reference purposes.
